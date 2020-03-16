@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../assets/css/dashboard2.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/dashboard.css">
+  <link rel="stylesheet" href="../assets/js/jquery.js">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+  <title>Document</title>
+</head>
+<body>
+  <div class="kiri">
+    <!-- <div class="burger">
+      <div class="slide">
+      
+      </div>
+    </div> -->
+    <div class="profile">
+      <div class="btn-burger">
+        <div class="slide"></div>
+      </div>
+      <img src="../assets/img/niki.jpeg" class="jj">
+      <p class="nama">Niki Zafanya</p>
+    </div>
+    <div class="menu-link">
+      <div class="sub-menu">
+      <a href="Explore">Explore</a>
+      <a href="History">History</a>
+      </div>
+    </div>
+    <div id="button"><a href="#popup">Add Book*</a></div>
+    
+    <div id="popup">
+      <div class="window">
+          <a href="#" class="close-button" title="Close"><img src="../assets/img/x.jpeg" class="silang" alt="close"></a>
+
+            <div class="tambahdata"> Add Data</div>
+              <p class="baris1">
+                  <label class="masukinimage">Url Image</label>
+                  <input type="text" name="urlimage" placeholder="Url Image..." />
+              </p>
+              <p class="baris2">  
+                <label class="judul">Title</label>
+                <input type="text" name="title" placeholder="Title..." />
+              </p>
+              <p class="baris3">
+                  <label class="deskripsi">Description</label>
+                  <input type="text" name="description" placeholder="Description..." />
+              </p>
+              <p class="baris4">
+                  <input type="submit" name="submit" value="Save" />
+              </p>
+        
+        </div>
+    </div>
+  </div>
+  <div class="kanan">
+    <div class="navigation"> 
+      <div class="menu-btn">
+        <div class="slide"></div>
+      </div>
+      <div class="menu-option">
+        <select class="select1">
+          <option value="">All Categories</option>
+          <option value="">Action</option>
+          <option value="">Romance</option>
+          <option value="">Horror</option>
+          <option value="">Drama</option>
+        </select>
+        <select class="select2">
+          <option value="">All times</option>
+          <option value="">Newest</option>
+          <option value="">Top rated</option>
+          <option value="">2020</option>
+          <option value="">2019</option>
+        </select>
+      </div>
+      <div class="pencarian">
+        <input type="text" placeholder= " &#61442;    Search book" class="search fa fa-search ">
+      </div>
+      <div class="libr">
+        <img src="../assets/img/book.png" class="book">
+        <p>Library</p>
+      </div>
+    </div>
+    <div class="dash">
+      <a href="detail.html"><div class="dash-1">
+        <div class="deg1">
+          <h2>Dilan 1990</h2>
+          <h4>Pidi baiq</h4>
+        </div>
+      </div></a>
+    <div class="dash2">
+      <a href="detail2.html"><div class="dash-2">
+        <div class="deg2">
+          <h2>Ubur ubur Lembur</h2>
+          <h4>Raditya dika</h4>
+        </div>
+        </div></a>
+    </div>
+      <div class="dash-3"><a href="detail3.html">
+          <div class="deg3">
+            <h2 class="top">Laskar pelangi</h2>
+            <h4 class="top">Andrea hirata</h4>
+        </div>
+      </div></a>
+  </div>
+
+    <!-- <div class="btn">
+      <div class="btn-kiri"></div>
+      <div class="btn-kanan"></div>
+    </div> -->
+    <div class="list">
+      <h3>List Book</h3>
+    </div>
+    <div class="card-wrap">
+    <a href="detail.html" class="card">
+      <div class="card1"></div>
+        <div class="card-text">
+          <h5>Dilan 1990</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacus mi, sit amet vehicula nisl consequat id.
+          </p>
+        </div>
+    </a>
+    <a href="detail5.html" class="card">
+      <div class="card2"></div>
+        <div class="card-text">
+          <h5>Sebuah seni untuk...</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacus mi, sit amet vehicula nisl consequat id.
+          </p>
+        </div>
+    </a>
+    <a href="detail4.html" class="card">
+      <div class="card3"></div>
+        <div class="card-text">
+        <h5>React native</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis lacus mi, sit amet vehicula nisl consequat id.
+        </p>
+      </div>
+    </a>
+    <!-- </div>
+    </div> -->
+  </div>
+  <script>
+
+    $(document).ready(function(){
+      $('.slide').click(function(){
+        $('.kiri').toggleClass('kirikanan')
+      })
+
+    });
+  </script>
+
+</body>
+</html>

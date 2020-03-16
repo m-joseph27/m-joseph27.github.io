@@ -1,0 +1,17 @@
+@font-face{
+    font-family: airbnb;
+    src: url("../fonts/AirbnbCerealBold.ttf");
+}
+@font-face{
+    font-family: airbnbmedium;
+    src: url("../fonts/AirbnbCerealMedium.ttf");
+}
+
+.nav-link{
+    color: lawngreen;
+}
+
+.nav-brand{
+    color: lawngreen;
+    font-size: 10px;
+}

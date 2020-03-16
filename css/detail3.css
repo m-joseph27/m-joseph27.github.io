@@ -1,0 +1,416 @@
+.jumbotron{
+    background-image: url(../img/laskarpelangi.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+
+}
+.img{
+    height: 289px;
+    width: 200px;
+    border-radius: 15px;
+    float: right;
+    margin-right: 40px;
+    margin-top: -200px;
+    transition: 0.7s all;
+}
+
+.img:hover{
+    transform: scale(0.9);
+    transition: 0.5s all;
+}
+
+@font-face {
+    font-family: "airbnb";
+    src: url("../fonts/AirbnbCerealBold.ttf");
+    }
+@font-face{
+    font-family: "airbnbmedium";
+    src: url("../fonts/AirbnbCerealMedium.ttf");
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: airbnb;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+a:hover{
+    color: silver;
+}
+
+.badge-warning{
+    border-radius: 20px;
+    color: white;
+    width: 80px;
+    height: 30px;
+    padding-top: 8px;
+}
+
+.text{
+    margin-top: 5px;
+    font-family: airbnb;
+    font-size: 50px;
+}
+
+.text1{
+    margin-top: 40px;
+    width: 800px;
+    font-size: 15px;
+}
+
+.text2{
+    color: lightgreen;
+    font-size: 30px;
+    font-family: airbnb;
+    float: right;
+    margin-right: 320px;
+    margin-top: -280px;
+
+}
+
+.h6{
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+.btn-warning{
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    float: right;
+    margin-right: -50px;
+    width: 200px; 
+    margin-top: -90px;
+    margin-bottom: 100px;
+    color: white;
+}
+
+.back{
+    margin-top: -50px;
+}
+
+.arrow{
+    margin-left: -53px;
+    margin-top: -10px;
+}
+
+/* .edit{
+    color: white;
+    font-family: airbnbmedium;
+    font-size: 20px !important;
+    position: absolute;
+    right: 90px;
+    margin-top: -80px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.delete{
+    color: white;
+    font-family: airbnbmedium;
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    margin-top: -80px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.edit:hover{
+    color: silver;
+}
+
+.delete:hover{
+    color: silver;
+}
+
+.arrow:hover{
+    color: silver;
+} */
+
+* {margin:0; padding: 0;}
+
+body {font-family: airbnb, airbnbmedium;}
+
+/* Tombol Button Pesan */
+#button {margin: 5% auto; width: 100px; text-align: center;}
+#button a {
+	width: 100px;
+	height: 50px;
+	vertical-align: middle;
+	background-color: beige
+	color: #ffffff;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
+
+/* Jendela Pop Up */
+#popup {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.7);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+    visibility: hidden;
+}
+
+.window {
+	width: 800px;
+	height: 500px;
+	background: #fff;
+	border-radius: 10px;
+    position: absolute;
+	padding: 10px;
+    margin-top: 50px;
+    margin-left: 250px;
+}
+.window h2 {
+    margin: 30px 0 0 0;
+    font-family: airbnbmedium;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-top: -30px;
+    margin-left: 30px;
+}
+/* Button Close */
+.close-button {
+	width:4%;
+	height: 9%;
+	line-height: 23px;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	display: block;
+	text-align: center;
+	color: red;
+	text-decoration: none;
+    position: relative;
+    z-index: 1;
+    left: 746px;
+    border: none;
+    font-size: 25px;
+    font-weight: lighter;
+    
+}
+
+/* Memunculkan Jendela Pop Up*/
+#popup:target {
+	visibility: visible;
+}
+
+.psn{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 200px;
+    color: #e0e0e0;
+}
+
+.psn:hover{
+    color: #e0e0e0;
+}
+
+.input{
+    font-family: airbnbmedium;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 33px;
+}
+
+.judul{
+    position: absolute;
+    font-family: airbnbmedium;
+    margin-top: 107px;
+    margin-left: -690px;
+}
+
+.area{
+    position: absolute;
+    font-family: airbnbmedium;
+    margin-top: 86px;
+    margin-left: -690px;
+}
+
+.url{
+    width: 555px;
+    height: 40px;
+    padding-left: 13px;
+    border-radius: 5px;
+    border: 1px solid #C8BABA;;
+    margin-left: 170px;
+    margin-top: 41px;
+    font-family: airbnbmedium;
+}
+
+.title{
+    width: 555px;
+    height: 40px;
+    padding-left: 13px;
+    border-radius: 5px;
+    border: 1px solid #C8BABA;;
+    margin-top: 15px;
+    margin-left: 170px;
+    font-family: airbnbmedium;
+}
+
+.description{
+    width: 555px;
+    height: 100px;
+    padding-bottom: -30px;
+    padding-left: 13px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    margin-top: 20px;
+    margin-left: 170px;
+    text-align: left;
+}
+
+.btn-save{
+    position: absolute;
+    width: 90px;
+    height: 36px;
+    border-radius: 5px;
+    color: white;
+    border: 0px;
+    background-color: #F4CF5D;
+    font-family: airbnbmedium;
+    margin-top: 160px;
+    margin-left: -90px;
+    font-weight: lighter;
+    font-size: 17px;
+
+}
+.edit1{
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 10px;
+}
+
+.tampilan{
+    position: absolute;
+    margin-top: -823px;
+    margin-left: 1200px;
+
+}
+
+#tombol {margin: 5% auto; width: 100px; text-align: center;}
+#tombol a {
+	width: 100px;
+	height: 50px;
+	vertical-align: middle;
+	background-color: beige
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
+
+/* Jendela Pop Up */
+#muncul {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.7);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+
+.jendela {
+	width: 800px;
+	height: 500px;
+	background: #fff;
+	border-radius: 10px;
+    position: absolute;
+	padding: 10px;
+    margin-top: 50px;
+    margin-left: 250px;
+}
+.window h3 {
+    margin: 30px 0 0 0;
+    font-family: airbnbmedium;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-top: -30px;
+    margin-left: 30px;
+}
+/* Button Close */
+.tutup-tombol {
+	width:4%;
+	height: 9%;
+	line-height: 23px;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	display: block;
+	text-align: center;
+	color: red;
+	text-decoration: none;
+    position: relative;
+    z-index: 1;
+    left: 746px;
+    border: none;
+    font-size: 25px;
+    font-weight: lighter;
+    
+}
+
+/* Memunculkan Jendela Pop Up*/
+#muncul:target {
+	visibility: visible;
+}
+
+.delete{
+    position: absolute;
+    right: 100px;
+}
+
+.centang{
+    position: absolute;
+    position: relative;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin-top: 60px;
+    margin-left: 305px;
+    animation: ease-in;
+}
+
+.dilan{
+    position: absolute;
+    position: relative;
+    z-index: 1;
+    margin-top: 250px;
+    margin-left: 250px;
+    font-family: airbnbmedium;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500px;
+}
+
+.data{
+    position: relative;
+    z-index: 2;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.dilan{
+    position: relative;
+    z-index: 1;
+    margin-left: 3px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 100px;
+}
+
+.tampilan2{
+    position: relative;
+    z-index: 2;
+    margin-left: 100px;
+    margin-top: -885px;
+}
+
